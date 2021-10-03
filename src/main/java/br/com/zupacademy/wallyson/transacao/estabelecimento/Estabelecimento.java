@@ -1,6 +1,6 @@
 package br.com.zupacademy.wallyson.transacao.estabelecimento;
 
-import br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes.EstabelecimentoResponse;
+import br.com.zupacademy.wallyson.transacao.transacoes.consultatransacoes.EstabelecimentoResponse;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

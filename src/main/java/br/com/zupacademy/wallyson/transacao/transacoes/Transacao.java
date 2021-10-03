@@ -2,8 +2,7 @@ package br.com.zupacademy.wallyson.transacao.transacoes;
 
 import br.com.zupacademy.wallyson.transacao.cartao.Cartao;
 import br.com.zupacademy.wallyson.transacao.estabelecimento.Estabelecimento;
-import br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes.EstabelecimentoResponse;
-import br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes.TransacaoResponse;
+import br.com.zupacademy.wallyson.transacao.transacoes.consultatransacoes.TransacaoResponse;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -1,4 +1,4 @@
-package br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes;
+package br.com.zupacademy.wallyson.transacao.transacoes.consultatransacoes;
 
 import java.util.UUID;
 

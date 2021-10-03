@@ -1,11 +1,5 @@
-package br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes;
+package br.com.zupacademy.wallyson.transacao.transacoes.consultatransacoes;
 
-import br.com.zupacademy.wallyson.transacao.cartao.Cartao;
-import br.com.zupacademy.wallyson.transacao.estabelecimento.Estabelecimento;
-
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;

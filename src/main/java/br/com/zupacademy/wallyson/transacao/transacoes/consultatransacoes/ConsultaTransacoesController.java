@@ -1,4 +1,4 @@
-package br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes;
+package br.com.zupacademy.wallyson.transacao.transacoes.consultatransacoes;
 
 import br.com.zupacademy.wallyson.transacao.transacoes.Transacao;
 import br.com.zupacademy.wallyson.transacao.transacoes.TransacaoRepository;
@@ -25,7 +25,7 @@ public class ConsultaTransacoesController {
         var transacoes  = transacaoRepository.findTop10ByCartao_NumeroOrderByEfetivadaEmDesc(numeroCartao);
 
         if (transacoes.isEmpty()) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Não existe transações para o cartão informado");
         }
 
         return transacoes.stream()
