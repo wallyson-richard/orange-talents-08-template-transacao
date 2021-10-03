@@ -10,3 +10,12 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  kafka:
+    bootstrap-servers: ${KAFKA_HOST:localhost:9092}
+    consumer:
+      auto-offset-reset: ${KAFKA_OFFSET-RESET:earliest}
+      group-id: ${KAFKA_GROUP_ID:transacoes}
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+topic:
+  transacao: ${KAFKA_TRANSACAO_TOPICO:transacoes}
