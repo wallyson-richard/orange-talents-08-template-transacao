@@ -2,6 +2,8 @@ package br.com.zupacademy.wallyson.transacao.transacoes;
 
 import br.com.zupacademy.wallyson.transacao.cartao.Cartao;
 import br.com.zupacademy.wallyson.transacao.estabelecimento.Estabelecimento;
+import br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes.EstabelecimentoResponse;
+import br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes.TransacaoResponse;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -38,5 +40,10 @@ public class Transacao {
         this.estabelecimento = estabelecimento;
         this.cartao = cartao;
         this.efetivadaEm = efetivadaEm;
+    }
+
+    public TransacaoResponse toDto() {
+        var estabelecimento = this.estabelecimento.toDto();
+        return new TransacaoResponse(id, numero, valor, estabelecimento, efetivadaEm);
     }
 }

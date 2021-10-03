@@ -1,5 +1,7 @@
 package br.com.zupacademy.wallyson.transacao.estabelecimento;
 
+import br.com.zupacademy.wallyson.transacao.transacoes.consultaulimastransacoes.EstabelecimentoResponse;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,5 +27,9 @@ public class Estabelecimento {
         this.nome = nome;
         this.cidade = cidade;
         this.endereco = endereco;
+    }
+
+    public EstabelecimentoResponse toDto() {
+        return new EstabelecimentoResponse(id, nome, cidade, endereco);
     }
 }
