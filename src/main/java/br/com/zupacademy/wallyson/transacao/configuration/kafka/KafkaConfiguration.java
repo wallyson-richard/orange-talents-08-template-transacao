@@ -1,4 +1,4 @@
-package br.com.zupacademy.wallyson.transacao.configuration;
+package br.com.zupacademy.wallyson.transacao.configuration.kafka;
 
 import static org.apache.kafka.clients.consumer.ConsumerConfig.*;
 

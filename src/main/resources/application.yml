@@ -10,6 +10,11 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${KEYCLOAK_JWKS_URI:http://localhost:18080/auth/realms/transacoes/protocol/openid-connect/certs}
   kafka:
     bootstrap-servers: ${KAFKA_HOST:localhost:9092}
     consumer:
